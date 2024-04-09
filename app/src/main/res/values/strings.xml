@@ -1,0 +1,49 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string name="app_name">Application</string>
+    <string name="nav_open">Open navigation drawer</string>
+    <string name="nav_close">Close navigation drawer</string>
+    <string name="title_activity_maps">Map</string>
+    <string-array name="numbers">
+        <item>Shop(Berbelanja)</item>
+        <item>Have a look(Melihat-lihat)</item>
+        <item>Adventure(Petualangan)</item>
+        <item>Berbelanja</item>
+        <item>Melihat-lihat</item>
+        <item>Petualangan</item>
+    </string-array>
+
+    <string-array name="wisata_alam">
+        <item>Pantai atau Laut</item>
+        <item>Pegunungan</item>
+        <item>Danau</item>
+        <item>Sungai</item>
+        <item>Air Terjun</item>
+        <item>Air Panas</item>
+        <item>Hutan</item>
+        <item>Persawahan</item>
+        <item>Perkebunan</item>
+        <item>Lainnya...</item>
+    </string-array>
+
+    <string-array name="wisata_budaya">
+        <item>Tradisi atau Adat-istiadat</item>
+        <item>Kesenian Tradisional</item>
+        <item>Arsitektur</item>
+        <item>Kuliner</item>
+        <item>Sejarah dan Kepurbakalaan</item>
+        <item>Religi atau Sepiritual</item>
+        <item>Spa dan Aromaterapi dll</item>
+        <item>Kehidupan masyarakat pedesaan</item>
+        <item>Lainnya...</item>
+    </string-array>
+
+    <string-array name="wisata_buatan">
+        <item>Fasilitas Hiburan</item>
+        <item>Fasilitas Peristirahatan</item>
+        <item>Fasilitas Olahraga</item>
+        <item>Pusat Perbelanjaan</item>
+        <item>Monumen</item>
+        <item>Barang Kerajinan</item>
+        <item>Lainnya...</item>
+    </string-array>
+</resources>

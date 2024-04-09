@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity_Admin">
+
+  <fragment
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/map"
+      android:name="com.google.android.gms.maps.SupportMapFragment"
+      />
+
+  <SearchView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/sv_location"
+      android:queryHint="Search..."
+      android:iconifiedByDefault="false"
+      android:layout_margin="10dp"
+      android:elevation="5dp"
+      android:background="@drawable/green"/>
+
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="bottom|end"
+      android:layout_margin="@dimen/fab_margin"
+      app:srcCompat="@drawable/centang"
+      android:backgroundTint="@color/green"
+      android:onClick="Centang"/>
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="50dp"
+      android:id="@+id/la" />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="50dp"
+      android:id="@+id/lo" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

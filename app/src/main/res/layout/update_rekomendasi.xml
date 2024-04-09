@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@color/green">
+                <Button
+                    android:onClick="backupdate"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/ic_baseline_chevron_left_24"
+                    android:backgroundTint="@color/white" />
+            </LinearLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/gambar"
+                    android:adjustViewBounds="true"
+                    android:orientation="vertical" />
+                <TextView
+                    android:id="@+id/jenistempat"
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#B9235952"
+                    android:padding="8dp"
+                    android:hint="Jenis Tempat"
+                    android:fontFamily="serif"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"/>
+                <TextView
+                    android:id="@+id/nama_tempat1"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp" />
+
+            </FrameLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="serif"
+                    android:text="Nama Tempat :"
+                    android:textColor="@color/green"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/nama_tempat"
+                    android:inputType="text"
+                    android:background="@drawable/green"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="serif" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="serif"
+                    android:text="Alamat :"
+                    android:textColor="@color/green"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/lokasi"
+                    android:inputType="text"
+                    android:background="@drawable/green"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="serif" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="serif"
+                    android:text="Deskripsi :"
+                    android:textColor="@color/green"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/deskripsitempat"
+                    android:inputType="textMultiLine"
+                    android:background="@drawable/green1"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="serif" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="serif"
+                    android:text="Waktu :"
+                    android:textColor="@color/green"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/waktu"
+                    android:inputType="text"
+                    android:background="@drawable/green"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="serif" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="serif"
+                    android:text="Kategori ?"
+                    android:textColor="@color/green"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+                <RadioGroup
+                    android:id="@+id/radiogroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+                    <RadioButton
+                        android:id="@+id/budaya"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Budaya_Adat"
+                        android:textColor="@color/green"
+                        android:textSize="17dp"
+                        android:fontFamily="serif"
+                        android:textStyle="bold"
+                        android:checked="true"/>
+                    <RadioButton
+                        android:id="@+id/umum"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Umum_Bali"
+                        android:textColor="@color/green"
+                        android:textSize="17dp"
+                        android:fontFamily="serif"
+                        android:textStyle="bold" />
+                </RadioGroup>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="serif"
+                    android:text="Harga :"
+                    android:textColor="@color/green"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/harga"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/green"
+                    android:fontFamily="serif"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/white" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="serif"
+                    android:text="Aturan :"
+                    android:textColor="@color/green"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/aturan"
+                    android:inputType="textMultiLine"
+                    android:background="@drawable/green1"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="serif" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:id="@+id/key" />
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal">
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:onClick="selectImage2"
+                        android:text="Image" />
+                    </FrameLayout>
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:onClick="saveimage"
+                        android:text="save Image" />
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"/>
+            <FrameLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp">
+                <Button
+                    android:id="@+id/update"
+                    android:background="@drawable/white1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="UPDATE"
+                    android:textColor="@color/green"
+                    android:textSize="30dp"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"/>
+            </FrameLayout>
+        </LinearLayout>
+        </ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</RelativeLayout>
